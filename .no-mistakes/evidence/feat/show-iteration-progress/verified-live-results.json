@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "Capped run counts only finished iterations, including a failed iteration",
+    "result": "pass",
+    "live": true,
+    "observed": "0/2 during iteration 1; 1/2 during iteration 2; 2/2 with one commit after the intentional failure."
+  },
+  {
+    "scenario": "Resume restores previously finished iterations",
+    "result": "pass",
+    "live": true,
+    "observed": "Existing real run resumed at 2/3; running iteration 3 stayed at 2/3, then finished at 3/3."
+  },
+  {
+    "scenario": "Uncapped run omits progress",
+    "result": "pass",
+    "live": true,
+    "observed": "Timer is followed directly by token totals, both before and after token usage arrives."
+  },
+  {
+    "scenario": "Zero iteration cap finishes without launching an agent",
+    "result": "pass",
+    "live": true,
+    "observed": "0/0 and max iterations reached (0); no agent start in the product log."
+  }
+]

@@ -1,0 +1,59 @@
+<!doctype html><meta charset="utf-8"><style>body{background:#161616;color:#eee;font-family:system-ui;margin:24px}h1{font-size:24px}h2{font-size:17px}p{max-width:820px;line-height:1.4}pre{font:15px/1.2 monospace;background:#080808;padding:18px;width:max-content;border:1px solid #555;border-radius:5px}</style><h1>Uncapped and zero-cap boundaries</h1><p>Actual terminal frames from the built CLI running authenticated Codex in an 83 × 30 PTY. Raw ANSI recordings and product logs accompany these captures.</p><h2>No max-iterations: no progress fraction</h2><pre>                                                              ·                    
+                 ·         ·                     ·                                 
+                                                                          ·        
+                               g n h f  ·  c o d e x                       ·       
+  ·     ·                                                                          
+  ⋆                                                                                
+              ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻              
+     ·        ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫              
+  ·           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹       ·      
+  ⋆                                                                                
+     ·    This is a small CLI progress verification. Stay strictly inside          
+       °    this repository. On odd-numbered iterations append one line            
+           containing the current iteration number to progress.txt and…            
+      °                                                                            
+                                                                                   
+                   00:00:05 · 0 total · 0 in · 0 out · 0 commits                   
+                                                                           °       
+                                                                                   
+          I’ll read the run notes, then append `1` to `progress.txt` for           
+         ·                        this iteration.                                  
+                                                                            ⋆      
+                                                                         ·         
+        ·                                                                          
+                                        🌓                                         
+    ⋆                                                                              
+                                                                          ·        
+              ·                                    · ·                          ·  
+               ·                                                                 ✧ 
+    [graceful stop requested, ctrl+c again to force stop, gnhf again to resume]    
+                                                                                   </pre><h2>Zero cap: 0/0, no agent launched</h2><pre>                      ·                                                            
+·           ·                                                      ·               
+                                                                                   
+ ·                             g n h f  ·  c o d e x                      ⋆        
+                                                                                   
+                                                                                   
+              ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻              
+              ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫              
+              ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹              
+        ·                                                                         ·
+          This is a small CLI progress verification. Stay strictly inside          
+            this repository. On odd-numbered iterations append one line        ⋆   
+·          containing the current iteration number to progress.txt and…        ⋆   
+                                                                                   
+       °                                                                           
+   ·            00:00:00 · 0/0 · 0 total · 0 in · 0 out · 0 commits                
+  ·                                                                                
+                                                                                 ··
+·                           max iterations reached (0)                             
+         °                                                                         
+     ·  ·                                                                          
+                                                                                 · 
+                                                                         ⋆         
+                                                                                  °
+         ✧                                                                         
+                                                                           ·       
+            ·       ·        ·            ·                            ·           
+                                                             ·                ·    
+                                 [ctrl+c to exit]                                  
+                                                                                   </pre>
