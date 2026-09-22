@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>gnhf iteration progress</title>
+<style>
+body{margin:0;background:#0d1117;color:#e6edf3;font-family:system-ui,sans-serif}
+main{max-width:1200px;margin:0 auto;padding:28px}
+h1,h2{font-weight:600} h2{margin-top:36px;font-size:20px}
+p,li{line-height:1.45} code{font-family:ui-monospace,'DejaVu Sans Mono',monospace}
+figure{margin:12px 0 8px}
+pre{background:#070b16;color:#d7e0ea;padding:12px 8px;overflow:auto;border:1px solid #30363d;
+font-family:ui-monospace,'DejaVu Sans Mono',monospace;font-size:12px;line-height:1.15;white-space:pre}
+.stats{font-family:ui-monospace,'DejaVu Sans Mono',monospace;background:#10203a;padding:8px 12px;border:1px solid #3d4f73}
+.readme{background:#161b22;border:1px solid #30363d;padding:12px 16px}
+</style></head><body><main>
+<h1>Interactive stats line</h1>
+<p>Frames captured from the running gnhf CLI in a 110×40 terminal.</p>
+<h2>README: Iteration progress</h2>
+<div class="readme"><p>with --max-iterations, the interactive stats line shows completed/max between the elapsed timer and token totals. The count includes finished iterations restored on resume and advances only after the active iteration finishes, whether it succeeds or fails. Runs without an iteration cap omit this segment. To fit crowded stats rows, separator spaces are removed and, if needed, token labels become Σ (total), ↓ (input), and ↑ (output).</p></div>
+<h2>Capped run while iteration 1 is still running</h2>
+<p>The stats line shows 0/2 between the timer and the token totals. Iteration 1 is still working, so the finished count stays at 0.</p>
+<p class="stats">00:00:01 · 0/2 · 1K total · 1K in · 80 out · 0 commits <span style="color:#9aa4b2">(54 columns)</span></p>
+<figure><pre>                                                                                           ·
+                 ·                      ·                                             ·    ·
+                                      ·                                                               °
+                                                ·                  ·     ·
+                                              ·         ·             ·                         ·   ·
+                          ·     ·          ·
+                   ·                                             ·           ·
+       ·                                                                                ·
+                                         g n h f  ·  o p e n c o d e                   ⋆ °
+°
+
+·                          ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻           ·
+         ·                 ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫                      ·    ·
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+                   ·                                                                            ✧
+    ·                                    ship the progress indicator                               ·
+                                                                                                             °
+                                                                                              ·
+                                                                                         ⋆
+    ⋆ ·     ·                                                                             ✧
+       ·                   00:00:01 · 0/2 · 1K total · 1K in · 80 out · 0 commits
+
+             ·
+          ⋆                                working on iteration 1                              ·
+   ·                 ·°
+ ⋆                                                                                         ·
+                                                                                            ·
+ ⋆       ·
+                                                     🌕                                                      °
+·
+           ✧                                                                                      ·
+       ·             ·                                                                                      ⋆
+     ✧                            ·  ·   ·              ·                            ·
+                                                          ·                ·
+                                                                ·
+                                               ·                       ·
+                                         ·            ·                                         ⋆
+                       ·                                                   ·          ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>Same run while iteration 2 is still running</h2>
+<p>Iteration 1 has finished, so the line shows 1/2 and 1 commit. It does not show 2/2 while iteration 2 is still working.</p>
+<p class="stats">00:00:02 · 1/2 · 2K total · 2K in · 100 out · 1 commit <span style="color:#9aa4b2">(54 columns)</span></p>
+<figure><pre>                                                                                           ·
+                 ·                      ·                                             ·    ·
+                                      ·                                                               °
+                                                ·                  ·     ·
+                                              ·         ·             ·                         ·   ·
+                          ·     ·          ·
+                   ·                                             ·           ·
+       ·                                                                                ·
+                                         g n h f  ·  o p e n c o d e                   ⋆ °
+°
+
+·                          ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻           ·
+         ·                 ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫                      ·    ·
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+                   ·                                                                            ✧
+    ·                                    ship the progress indicator                               ·
+                                                                                                             °
+         ⋆                                                                                    ·
+                                                                                         ⋆
+    ⋆ ·     ·                                                                             ✧
+       ·                   00:00:02 · 1/2 · 2K total · 2K in · 100 out · 1 commit
+
+             ·
+          ⋆                                working on iteration 2                              ·
+   ·                 ·°
+ ⋆                                                                                         ·
+                                                                                            ·
+ ⋆       ·
+                                                    🌕 🌔                                                     °
+·
+           ✧                                                                                      ·
+       ·             ·                                                                                      ⋆
+     ✧                            ·  ·   ·              ·                            ·
+                                                          ·                ·
+                                                                ·
+                                               ·                       ·
+                                         ·
+                       ·                                                   ·          ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>A failing iteration has not been counted yet</h2>
+<p>While the failing iteration is still running, the line stays at 0/2 and 0 commits.</p>
+<p class="stats">00:00:01 · 0/2 · 20 total · 15 in · 5 out · 0 commits <span style="color:#9aa4b2">(53 columns)</span></p>
+<figure><pre>      ·         ·           ·                              ·         ··
+                              ·     ·         ·                ·                                          ✧
+  ·                ·   ·         ··                              ·     ·
+              ⋆   ·                    ·                                 ·                   ·
+                   ·                                           ·        ·        ·                ⋆
+
+   ·             ·                            ·                          ·  ·
+         ·        ° ·                                                                           ·
+                                         g n h f  ·  o p e n c o d e
+               ⋆                                                                        °      °     ✧
+⋆        ·                                                                                    ·
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻               °   ·
+            ✧ ·     ·      ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+       ·            ·                                                                                       °
+ ·                  ✧                     count a failed iteration
+         ·                                                                                  ·
+             ·                                                                             ·         ✧
+                                                                                                    ·
+           ·
+                            00:00:01 · 0/2 · 20 total · 15 in · 5 out · 0 commits
+                      ·                                                                          ·
+
+·       ⋆   ·                              working on iteration 1
+
+
+
+ ⋆
+                                                     🌘                                                 ··   ·
+
+  ⋆                                                                                           °   ·  ·      ·
+                                                              · ·              ·
+                       ·                                          ·
+ ·                       ·                 ·                        ··                        ·
+                                                                  ··      ·                    ·
+                                                    ·                                           ·
+                            ·                     ·                                ·
+                                                                            ·                ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>The failed iteration counts only after it finishes</h2>
+<p>After the failure, the next iteration is running and the line shows 1/2 with 0 commits.</p>
+<p class="stats">00:00:02 · 1/2 · 31 total · 23 in · 8 out · 0 commits <span style="color:#9aa4b2">(53 columns)</span></p>
+<figure><pre>      ·         ·           ·                              ·         ··
+                              ·     ·         ·                ·                                          ✧
+  ·                ·   ·         ··                              ·     ·
+              ⋆   ·                    ·                                 ·                   ·
+                   ·                                           ·        ·        ·                ⋆
+
+   ·             ·              ·             ·                          ·  ·
+         ·        ° ·                                                                           ·
+                                         g n h f  ·  o p e n c o d e
+               ⋆                                                                        °      °     ✧
+⋆        ·                                                                                    ·
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻               °   ·
+            ✧ ·     ·      ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+       ·            ·                                                                                       °
+ ·                  ✧                     count a failed iteration
+         ·                                                                                  ·
+             ·                                                                             ·         ✧
+                                                                                                    ·
+           ·
+                            00:00:02 · 1/2 · 31 total · 23 in · 8 out · 0 commits
+                      ·                                                                          ·
+
+·       ⋆   ·                              working on iteration 2
+
+
+
+ ⋆
+                                                    🌑 🌖                                                ··   ·
+
+  ⋆                                                                                           °   ·  ·      ·
+                                                              · ·              ·
+                       ·                                          ·
+ ·                       ·                 ·                        ··                        ·
+                                                                  ··      ·                    ·
+                                                    ·                                           ·
+                            ·                     ·                                ·
+                                                                            ·                ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>A new capped run starts at 0/1</h2>
+<p>Before the first iteration finishes, resume has nothing to restore.</p>
+<p class="stats">00:00:01 · 0/1 · 60 total · 50 in · 10 out · 0 commits <span style="color:#9aa4b2">(54 columns)</span></p>
+<figure><pre>                                            ·                ·                  ·
+ ⋆                                              ·           ·                                              ·°
+                                             ·                                        ·                  ✧·
+                                           ·                          ·       ·
+                                                                                        ·           ⋆
+                                                                ·               ·
+    ·               ·                                                   ·       ·          ·
+                                                                                       ⋆
+     °                                   g n h f  ·  o p e n c o d e                              ·
+
+                 ⋆                                                                    ·                      ·
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻                        ⋆
+                           ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫                      ⋆
+    ✧ ·                    ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹       ·
+    ·
+                                          resume the finished count
+                ⋆                                                                        ·
+            °
+              °
+                                                                                         °  °
+              ° °          00:00:01 · 0/1 · 60 total · 50 in · 10 out · 0 commits                     °
+                                                                                                      ·
+
+                                           working on iteration 1                           ·  ·       ·
+                ⋆                                                                                            ✧
+                                                                                                ·
+             ⋆                                                                               ·
+         ·                                                                                                  ·
+                  ⋆                                  🌔
+                                                                                                           ⋆
+ °            ⋆
+             °                                            ·              ·       ·                   ·
+·  ·                                                                           ·         ·      ·
+                                ·                                                                   ·
+                                                                                                       ·     ✧
+                                                                     ·                                    °
+  ⋆               ·                            ·                              ·
+                                                                         ·             ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>Resume counts the iteration that already finished</h2>
+<p>The same prompt on the gnhf branch, now capped at 3, shows 1/3 and the existing commit while iteration 2 is still working.</p>
+<p class="stats">00:00:01 · 1/3 · 14 total · 10 in · 4 out · 1 commit <span style="color:#9aa4b2">(52 columns)</span></p>
+<figure><pre>                 ·               ·                                           ·
+                             ·         ·                                ·                 ··
+                                                                                                 ··⋆
+ ⋆                                         ·            ·   ·
+  ⋆        ··          ·                                                ·              ·
+     ✧                                                   ·                          ·
+                                                                                                             ⋆
+
+°      ·                                 g n h f  ·  o p e n c o d e
+                                                                                                  °
+                                                                                                          ·
+·                          ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+     °·                    ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹                      ·
+  ·                °
+            ·         ·                   resume the finished count
+                                                                                                       ⋆
+              °
+                °                                                                                         ·
+                                                                                              ⋆
+     ✧                      00:00:01 · 1/3 · 14 total · 10 in · 4 out · 1 commit                    °
+       °
+    ·
+                                           working on iteration 2                                    ·
+ ·
+
+       ·       ⋆
+              ·
+ ⋆                                                   🌑
+       ⋆
+       ·                                                                                                 ·
+                              ·                          ·
+        ⋆                    ·             ·                  ·                 ·
+                                      ·
+      ⋆
+                             ·             ·            ·
+      ·                                ·        ·
+                    ·                ·                    ·               ·      ·   ·  · ·          ⋆
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>A run without --max-iterations omits the segment</h2>
+<p>The stats line goes from the timer straight to the token totals.</p>
+<p class="stats">00:00:01 · 425 total · 400 in · 25 out · 0 commits <span style="color:#9aa4b2">(50 columns)</span></p>
+<figure><pre>                        ·      ·
+                                                                                                    ⋆
+                                                         ··                       ··
+                                                                                        ·
+                  ·                        ·                                        ··      ·
+          °                  ·            ·                                        ·
+        °                          ·                                                   ·      ·
+ ⋆           °
+           °                             g n h f  ·  o p e n c o d e
+          °
+    ·                                                                                     ⋆
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+                ⋆          ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫                    ⋆
+                           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+                 ⋆                                                                        °
+                                              run without a cap
+     ✧       ✧                                                                                 °
+
+                                                                                           ·
+                   ·
+                   ·         00:00:01 · 425 total · 400 in · 25 out · 0 commits
+          ·                                                                                               ·
+      ·
+                                           working on iteration 1
+    ·
+   ·
+                                                                                                ⋆
+°                  ·                                                                      ⋆
+                                                     🌗
+         °  °       ·                                                                                 · ·
+  ⋆ ⋆                                                                                     °    ⋆
+                                               ·                                             ·            ⋆  ·
+    ⋆·        ··      ·                                                                               ·
+                                                                                                         °
+                                       ·
+              ·
+    ·                                                      ·                                               °
+                                             ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>High token counts stay inside the content width</h2>
+<p>12 finished of 20, 87.3M input, 860K output, and 11 commits. Separator spaces are removed. The line is 55 columns and still ends with 11 commits.</p>
+<p class="stats">00:00:02·12/20·88.2M total·87.3M in·860K out·11 commits <span style="color:#9aa4b2">(55 columns)</span></p>
+<figure><pre>                               ·                       ·               ·
+                      ·                     ·                                                     °
+                ·
+      ·                           ·               ·                                              ✧      ·
+                                       ·
+     °                    ·                                                         ··
+                          ·                  ·                                                            ⋆
+                                                                                             ·   ·
+                                         g n h f  ·  o p e n c o d e
+        ·
+                ⋆                                                                                   ·
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+             ·             ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+            ✧              ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+     ·
+⋆                                         fit the crowded stats row
+
+              ·
+
+
+     ·              ·      00:00:02·12/20·88.2M total·87.3M in·860K out·11 commits    °⋆
+     ⋆            ⋆                                                                        ·
+                                                                                          ⋆
+                                           working on iteration 13
+  °                   ⋆                                                                                 °
+                                                                                                           ·
+     ⋆                                                                                                       ·
+         ⋆                                                                                        °
+          ⋆                              🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌑 🌒
+                                                                                             ·
+              ✧
+      °                                    ·                ·                             ·
+                                                                         ·                          ·
+    ·                                                                            ·                   ·
+                                                                                ·
+       ·                             ·                                                   ·
+          ·        ·                 ·                                                           ·
+       °         ·                        ·                            ·    ·              ·     ⋆  ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+<h2>A wider row switches to compact token labels</h2>
+<p>12 finished of 2000 with trillion-scale totals. Labels become Σ, ↓, and ↑. The line is 55 columns and still ends with 11 commits.</p>
+<p class="stats">00:00:02·12/2000·Σ17400.0T·↓8700.0T·↑8700.0T·11 commits <span style="color:#9aa4b2">(55 columns)</span></p>
+<figure><pre>                                                                              ·
+          ⋆                ·                        ·
+                                                                                    · ·      ·
+              ·                ·             ·                                      ·
+              ⋆              · ·   ·              ·
+                                                                                               °       ·
+    ·                      ·                      ·                            ·                        ✧
+                                                                                        ·
+           °                             g n h f  ·  o p e n c o d e                                     ··
+         ·            ⋆                                                                      °
+                                                                                      ⋆                      ·
+                           ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻      ✧        ⋆
+                           ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫      ✧
+   ⋆           ·           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹                  ·    °
+                                                                                                      ·
+                                          fit the compact stats row
+   ⋆
+                                                                                             ·
+
+      ⋆                                                                                    ·
+                    ·      00:00:02·12/2000·Σ17400.0T·↓8700.0T·↑8700.0T·11 commits           ·    °
+         °
+
+                                           working on iteration 13
+           ·       ·
+
+                                                                                                           ·
+
+                                         🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌕 🌑 🌕
+
+                                                                                                        ⋆
+         ·      ·       ·                                                                                ·
+    ·
+                                             ·                                                              ⋆
+               ·                                                        ·         ·
+                        ·               ·     ··     ·    ·                             ·    ·    ·   ·
+         ·                     ·
+       ·                            ·                ·     ·                          ·     ·
+                                    [ctrl+c to stop, gnhf again to resume]</pre></figure>
+</main></body></html>

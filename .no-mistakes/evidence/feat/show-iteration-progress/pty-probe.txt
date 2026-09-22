@@ -1,0 +1,2 @@
+initial 110x40 tty=true
+resized 112x40
