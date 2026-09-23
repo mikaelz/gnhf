@@ -1,0 +1,45 @@
+A crowded stats row keeps the full commit count inside the content width
+pty winsize rows=40 cols=100
+fractions seen: 0/20, 4/20, 12/20
+stats='00:00:00·12/20·88.2M total·87.3M in·860K out·12 commits    ·             °' match='00:00:00·12/20·88.2M total·87.3M in·860K out·12 commits' match_len=55 ends=[{'iteration': 1, 'success': True}, {'iteration': 2, 'success': True}, {'iteration': 3, 'success': True}, {'iteration': 4, 'success': True}, {'iteration': 5, 'success': True}, {'iteration': 6, 'success': True}, {'iteration': 7, 'success': True}, {'iteration': 8, 'success': True}, {'iteration': 9, 'success': True}, {'iteration': 10, 'success': True}, {'iteration': 11, 'success': True}, {'iteration': 12, 'success': True}]
+
+                                                                                    ·
+      ✧                         ·           ·
+                       ·                                  ·   ·
+          · ·      ·                                     ·
+               ·                                                           ·
+                    ·     ·                     ·              ·       ·       ·
+                 ·              ·                                                                ·
+                                                                                   ·
+       ·                            g n h f  ·  o p e n c o d e
+
+
+  °             °     ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+      ·    °          ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫               ⋆
+             °        ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+
+  °                                           ship it                                ·
+
+   ·                                                                                            ⋆
+
+         ·
+                      00:00:00·12/20·88.2M total·87.3M in·860K out·12 commits    ·             °
+     ·                                                                                      ·
+          ·
+                            {"success":true,"summary":"mocked objective
+                  complete","key_changes_made":["README.md"],"key_learnings":["mo
+      °                                         ck…                              · ✧
+
+          ·
+                                    🌕🌕🌕🌕    🌕🌕🌕🌕🌔   🌕🌕🌕🌕🌕
+          ·                                                                          °          ·
+    ⋆                                                                                 °
+                     ·
+                  ·                                         ·
+                                                                   ·              ·
+          ·            · ·   ·           ·            ·  ·
+
+      ·            ·
+     ·              ·                                    ·
+                               [ctrl+c to stop, gnhf again to resume]
+

@@ -1,0 +1,45 @@
+After the interrupted attempt, the next finished iteration advances the fraction by one
+pty winsize rows=40 cols=100
+fractions seen: 1/4, 2/4
+stats='00:00:00 · 2/4 · 16 total · 10 in · 5 out · 2 commits        ·' seen=['1/4', '2/4'] ends=[{'iteration': 1, 'success': True}, {'iteration': 3, 'success': True}] iteration-4.jsonl=True
+
+                              ·                                                            ·    °
+
+     ✧                   ·       ·                                                   ·
+                                                     ·       ·               ·   ·
+      ✧         ·                ·
+   ·   °         ·      ·                                          ·                         ·
+                                     ·      ·
+                                                                                   ·
+ ·                                  g n h f  ·  o p e n c o d e
+                ·                                                                              ⋆
+                 °
+                      ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻             °       °
+         ·      °     ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+              ·       ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹
+   °
+             ·                                ship it
+          ·     ·
+
+               °
+               ⋆                                                                              ·
+                       00:00:00 · 2/4 · 16 total · 10 in · 5 out · 2 commits        ·
+
+                                                                                             ⋆
+                            {"success":true,"summary":"mocked objective
+                  complete","key_changes_made":["README.md"],"key_learnings":["mo
+     · ·                                        ck…
+
+
+                                               🌕🌔                               ·
+               ·
+
+                            ·                    ·    ·     ·                       ·
+
+                 ·                                 ·                                             ⋆
+                                                                                                ⋆⋆
+           ·     ·                             · ·          ·                                    ⋆
+               ·                            ·                                        ·
+       ·             ·                                    ·
+                               [ctrl+c to stop, gnhf again to resume]
+

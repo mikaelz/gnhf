@@ -1,0 +1,45 @@
+Without --max-iterations the stats row has no completed/max fraction
+pty winsize rows=40 cols=100
+fractions seen: (none)
+stats='00:00:00 · 0 total · 0 in · 0 out · 0 commits' seen=[] started=True
+
+            ·                         ·                                                      ⋆
+                                                                      ·                      ·
+                                 ·                                  ·           ·
+                                                                            ·          ·
+                                     ·                                                     ·
+             ·                                                                  ·      ·        °
+               ·                             ·         ·                                         ⋆
+⋆                                                                                 ⋆       ·
+            ·                       g n h f  ·  o p e n c o d e
+       °
+
+                      ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+       ·       ·      ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫              ·   ⋆
+    ·     ⋆           ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹            ·
+
+·          ·                                  ship it
+
+
+       ·     ·
+
+                           00:00:00 · 0 total · 0 in · 0 out · 0 commits
+                                                                                          ·
+      ·
+                                            working...
+
+
+
+
+                                                🌑
+                                                                                               ·
+                 ·
+                                                ·           ·                                   °
+              ·          ·                                                                         ⋆
+                       ·     ·        ·                          ·     ·    ·      ·    ·
+                               ·        ·
+                  ·                                 ·           ·  ·
+                    ·          ·          ·     ·
+ ·          ·      ·                                ·
+                               [ctrl+c to stop, gnhf again to resume]
+

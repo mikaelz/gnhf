@@ -1,0 +1,45 @@
+A running iteration shows 0/max between the timer and the token counts
+pty winsize rows=40 cols=100
+fractions seen: 0/3
+stats='00:00:00 · 0/3 · 0 total · 0 in · 0 out · 0 commits' seen=['0/3'] ends=[] iteration-1.jsonl=True
+
+·         ·                             ·                                  ·
+         ·                                                                     ·               ✧
+            ·                           ·                     ·           ·
+           ·                     ·            ·
+                            ·                ·       ·
+                               ·                    ·                   ·       ·      ·
+                         ·
+
+                                    g n h f  ·  o p e n c o d e                                 ·
+                                                                                    ⋆
+                                                                                 ·
+           ·    °     ┏━╸┏━┓┏━┓╺┳┓   ┏┓╻╻┏━╸╻ ╻╺┳╸   ╻ ╻┏━┓╻ ╻┏━╸   ┏━╸╻ ╻┏┓╻
+                      ┃╺┓┃ ┃┃ ┃ ┃┃   ┃┗┫┃┃╺┓┣━┫ ┃    ┣━┫┣━┫┃┏┛┣╸    ┣╸ ┃ ┃┃┗┫
+                      ┗━┛┗━┛┗━┛╺┻┛   ╹ ╹╹┗━┛╹ ╹ ╹    ╹ ╹╹ ╹┗┛ ┗━╸   ╹  ┗━┛╹ ╹         °      ·
+                                                                                             ·   ·
+                                              ship it
+                                                                                             ⋆
+                                                                                             ··
+             ⋆
+   ·                                                                                       · ·
+                        00:00:00 · 0/3 · 0 total · 0 in · 0 out · 0 commits
+          ·
+
+                 ·                          working...
+
+          ⋆⋆  ·                                                                                ⋆
+
+
+ °                                              🌔
+      ·   ·                                                                                      ·
+
+                                           ·
+                                                          ·            ·          ·            °°
+                                          ·
+                                                                                              ·
+                                                              ·             ·
+
+                                            ·                     ·
+                               [ctrl+c to stop, gnhf again to resume]
+
